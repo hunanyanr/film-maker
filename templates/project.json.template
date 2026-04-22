@@ -1,0 +1,29 @@
+{
+  "id": "<project-slug>",
+  "title": "<human title>",
+  "format": "reel | short-film | feature | series",
+  "aspectRatio": "9:16 | 16:9 | 1:1",
+  "resolution": "1080p",
+  "aesthetic": "<free-form — photorealistic cinematic / 3D Pixar render / 2D anime / claymation / noir b&w / etc>",
+  "genre": {
+    "primary": "<one of the 14 core genres — see references/genre-catalog.md>",
+    "secondary": "<optional second genre for blends>",
+    "tone": ["<heightened | grounded>", "<dark | light>", "<earnest | ironic>", "<slow-burn | propulsive>", "<brainrot?>"]
+  },
+  "structure": {
+    "type": "single | episodic",
+    "episodes": 1,
+    "avgBeatsPerEpisode": 7,
+    "avgBeatDuration": 8
+  },
+  "models": {
+    "image": "gemini-3.1-flash-image",
+    "imageFallback": "grok-imagine",
+    "video": "kling-3.0-pro",
+    "videoDialog": "kling-avatar",
+    "videoFallback": "kling-omni",
+    "tts": "eleven-v3"
+  },
+  "status": "planning | producing | complete",
+  "createdAt": "<ISO timestamp>"
+}

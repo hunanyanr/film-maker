@@ -1,0 +1,61 @@
+{
+  "id": "<scenario-id — matches episode id or project id>",
+  "title": "<scene/episode title>",
+  "description": "<2-3 sentence description of what this scenario covers>",
+  "theme": "<one-line theme>",
+  "characters": ["<char-id-1>", "<char-id-2>"],
+  "beats": [
+    {
+      "id": "b01-<short-slug>",
+      "type": "establishing | reaction | dialog",
+      "character": "<primary-char-id>",
+      "characters": ["<all chars in frame>"],
+      "description": "<1-2 sentence description of the shot>",
+      "references": {
+        "images": ["<char-ids referenced by @Image tags>"],
+        "locations": ["<location-ids>"],
+        "props": ["<prop-ids — optional>"],
+        "audio": "<char-id for TTS — only for dialog beats>"
+      },
+      "prompt": "<shot-card style. Shot size, camera movement, lens feel, lighting, emotional beat. Use @Image1/@Image2/@Audio1 tags aligned to the references array order.>",
+      "duration": 5,
+      "dialog": null
+    },
+    {
+      "id": "b02-<short-slug>",
+      "type": "dialog",
+      "character": "<speaker-char-id>",
+      "characters": ["<speaker-only — dialog beats are SOLO>"],
+      "description": "<what the character says and why it matters>",
+      "references": {
+        "images": ["<speaker-char-id>"],
+        "locations": ["<location-id>"],
+        "audio": "<speaker-char-id>"
+      },
+      "prompt": "<shot card. @Image1 [character] speaks with the voice from @Audio1. Include emotional guidance.>",
+      "duration": 8,
+      "dialog": {
+        "speaker": "<char-id>",
+        "text": "<the line>",
+        "emotion": "<how it's delivered — quiet / devastated / playful / etc>"
+      }
+    }
+  ],
+  "transition": {
+    "type": "xfade",
+    "effect": "fade",
+    "duration": 0.5
+  },
+  "socialCopyTemplates": {
+    "<char-id>": {
+      "postedBy": "<char-id>",
+      "hook": "<attention-grabbing first line in character voice>",
+      "caption": "<Instagram caption — polished, aesthetic, character voice>",
+      "tiktokCaption": "<TikTok — shorter, punchier>",
+      "youtubeCaption": "<YouTube description — longer, more context>",
+      "hashtags": ["<without hash symbols>", "picsart", "picsartaiinfluencer", "picartinfluencer"]
+    }
+  },
+  "trendTags": ["<tags for discoverability>"],
+  "createdAt": "<ISO timestamp>"
+}

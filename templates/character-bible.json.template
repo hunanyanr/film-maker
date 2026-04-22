@@ -1,0 +1,41 @@
+{
+  "id": "<short-slug>",
+  "name": "<display name>",
+  "role": "<protagonist | antagonist | foil | mentor | comic-relief | wildcard | ensemble>",
+  "archetype": "<one-line archetype description>",
+  "form": "<species/type — human-age / anthropomorphic-fruit / animal-species / robot / creature / etc>",
+  "physicalDescription": "<4-8 sentences of specific visual detail. Face, hair, body, skin, signature features. What you'd see in a mugshot. Must be specific enough that two people given this description would draw the same character.>",
+  "consistencyAnchors": [
+    "<visually-identifying feature 1 — must lock across every generation>",
+    "<feature 2>",
+    "<feature 3>",
+    "<4-8 total>"
+  ],
+  "colorPalette": ["#AABBCC", "#DDEEFF", "#112233", "#445566", "#778899"],
+  "wardrobe": {
+    "signature": ["<signature piece 1>", "<piece 2>"],
+    "styleDescription": "<one-line aesthetic summary>",
+    "neverWears": ["<things that would break the character>"]
+  },
+  "voiceConfig": {
+    "provider": "elevenlabs",
+    "model": "eleven-v3",
+    "voiceId": null,
+    "settings": {
+      "stability": 0.6,
+      "similarityBoost": 0.8,
+      "style": 0.3,
+      "useSpeakerBoost": true
+    },
+    "description": "<1-2 sentences on how this character sounds — register, pace, emotional default>"
+  },
+  "personality": {
+    "coreTraits": ["<trait 1>", "<trait 2>", "<trait 3>"],
+    "quirks": ["<observable behavior 1>", "<behavior 2>"],
+    "contradictions": ["<a tension within the character>"],
+    "speechPatterns": ["<how they talk — lowercase, formal, caps for emphasis, etc>"],
+    "catchphrases": ["<short recurring line>"]
+  },
+  "canonicalImage": null,
+  "turnaroundPath": null
+}

@@ -1,0 +1,25 @@
+{
+  "skill_name": "film-maker",
+  "evals": [
+    {
+      "id": 0,
+      "name": "noir-reel-plan",
+      "prompt": "Make me a 15-second noir reel — a detective discovers their partner's betrayal in a neon-lit alley. Just plan it, don't generate the videos yet (use --plan-only).",
+      "expected_output": "A complete plan folder: project.json, plot.md, at least 2 character bibles (detective + partner/antagonist), at least 1 location (neon alley), scenario.json with 2-3 beats, and social-copy templates. No image/video generation performed. Genre should be noir. Aspect ratio should be 9:16.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "scifi-fable-shortfilm-plan",
+      "prompt": "Craft a 3-minute sci-fi fable as a short film — a lone gardener on a dying space station finds a seedling growing where nothing should grow. Plan only, no production.",
+      "expected_output": "A plan folder with: project.json (genre: sci-fi fable, format: short-film, 16:9), plot.md with 3-act fable structure, 1-2 character bibles (the gardener, optionally the seedling treated as a character), 3-6 locations (station interior areas), scenario.json with 18-25 beats covering the full story arc, 5-view turnaround rule followed in canonical descriptions, social copy templates for gardener character.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "soap-opera-series-plan",
+      "prompt": "Create a 5-episode brainrot-telenovela series about three roommates in a haunted LA apartment where the ghost is a passive-aggressive ex. Plan only please.",
+      "expected_output": "A plan folder with: project.json (genre: soap-opera, tone includes brainrot + heightened, format: series, episodes: 5, 9:16 aspect), plot.md with per-episode arcs and a season arc, 4 character bibles (3 roommates + 1 ghost), shared locations across episodes (apartment rooms + exterior locations), episodes/e01 through e05 with scenario.json each, per-episode social copy templates per posting character, cliffhangers between episodes."
+    }
+  ]
+}
